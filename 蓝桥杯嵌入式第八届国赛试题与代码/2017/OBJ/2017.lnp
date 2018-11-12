@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "..\obj\core_cm3.o" "..\obj\startup_stm32f10x_md.o" "..\obj\misc.o" "..\obj\stm32f10x_adc.o" "..\obj\stm32f10x_tim.o" "..\obj\stm32f10x_exti.o" "..\obj\stm32f10x_rcc.o" "..\obj\stm32f10x_gpio.o" "..\obj\stm32f10x_i2c.o" "..\obj\main.o" "..\obj\stm32f10x_it.o" "..\obj\system_stm32f10x.o" "..\obj\key.o" "..\obj\led.o" "..\obj\lcd.o" "..\obj\adc.o" "..\obj\capture.o" "..\obj\i2c.o" "..\obj\pwm.o" 
+--strict --scatter "..\OBJ\2017.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\2017.map" -o ..\OBJ\2017.axf

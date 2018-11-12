@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\FWLIB\inc -I..\USER -I "F:\CT117E\Keil uVision4\ARM\INC" -I "F:\CT117E\Keil uVision4\ARM\INC\ST\STM32F10x" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o "..\OUTPUT\stm32f10x_i2c.o" --omf_browse "..\OUTPUT\stm32f10x_i2c.crf" --depend "..\OUTPUT\stm32f10x_i2c.d" "..\FWLIB\src\stm32f10x_i2c.c"

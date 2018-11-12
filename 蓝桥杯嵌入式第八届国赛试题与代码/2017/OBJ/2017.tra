@@ -1,0 +1,38 @@
+*** Creating Trace Output File '..\OBJ\2017.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\obj\core_cm3.o"'
+### List of Objects: adding '"..\obj\startup_stm32f10x_md.o"'
+### List of Objects: adding '"..\obj\misc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_adc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_tim.o"'
+### List of Objects: adding '"..\obj\stm32f10x_exti.o"'
+### List of Objects: adding '"..\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\obj\stm32f10x_i2c.o"'
+### List of Objects: adding '"..\obj\main.o"'
+### List of Objects: adding '"..\obj\stm32f10x_it.o"'
+### List of Objects: adding '"..\obj\system_stm32f10x.o"'
+### List of Objects: adding '"..\obj\key.o"'
+### List of Objects: adding '"..\obj\led.o"'
+### List of Objects: adding '"..\obj\lcd.o"'
+### List of Objects: adding '"..\obj\adc.o"'
+### List of Objects: adding '"..\obj\capture.o"'
+### List of Objects: adding '"..\obj\i2c.o"'
+### List of Objects: adding '"..\obj\pwm.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\obj\core_cm3.o" "..\obj\startup_stm32f10x_md.o" "..\obj\misc.o" "..\obj\stm32f10x_adc.o" "..\obj\stm32f10x_tim.o" "..\obj\stm32f10x_exti.o" "..\obj\stm32f10x_rcc.o" "..\obj\stm32f10x_gpio.o" "..\obj\stm32f10x_i2c.o" "..\obj\main.o" "..\obj\stm32f10x_it.o" "..\obj\system_stm32f10x.o" "..\obj\key.o" "..\obj\led.o" "..\obj\lcd.o" "..\obj\adc.o" "..\obj\capture.o" "..\obj\i2c.o" "..\obj\pwm.o" 
+--strict --scatter "..\OBJ\2017.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\2017.map" -o ..\OBJ\2017.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\OBJ\2017.axf'
+### ADS-LD Command File: '..\OBJ\2017.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\OBJ\2017.lnp', Handle=0x00001914
+### Writing '.lnp' file
+### ADS-LD Command file '..\OBJ\2017.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

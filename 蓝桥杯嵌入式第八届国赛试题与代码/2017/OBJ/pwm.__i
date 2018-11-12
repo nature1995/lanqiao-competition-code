@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CORE -I..\FWLIB\inc -I..\HARDWARE -I..\USER 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o "..\OBJ\pwm.o" --omf_browse "..\OBJ\pwm.crf" --depend "..\OBJ\pwm.d" "..\HARDWARE\pwm.c"

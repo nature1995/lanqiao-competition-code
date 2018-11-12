@@ -1,0 +1,257 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\gzr20_000\Desktop\第六届决赛\USER\GO.uvproj
+Project File Date:  03/06/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14854 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.52 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14874 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.54 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+main.c(246): error:  #169: expected a declaration
+main.c:       if(RB4==0)
+main.c:       ^
+main.c(309): warning:  #12-D: parsing restarts here after previous syntax error
+main.c:                  TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;  //正向通道有效  PA8 
+main.c:                                                                              ^
+main.c(310): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OutputNState = TIM_OutputNState_Enable; //反向通道也有效 PB13
+main.c:                  ^
+main.c(310): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OutputNState = TIM_OutputNState_Enable; //反向通道也有效 PB13
+main.c:                                     ^
+main.c(312): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_Pulse = CCR2_Val;        //占空时间  144 中有40的时间为高，互补的输出正好相反     CCR2_Val
+main.c:                  ^
+main.c(312): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_Pulse = CCR2_Val;        //占空时间  144 中有40的时间为高，互补的输出正好相反     CCR2_Val
+main.c:                                     ^
+main.c(313): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;   //输出极性
+main.c:                  ^
+main.c(313): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;   //输出极性
+main.c:                                     ^
+main.c(314): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OutputState=TIM_OutputState_Enable;  //使能该通道输出
+main.c:                  ^
+main.c(314): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OutputState=TIM_OutputState_Enable;  //使能该通道输出
+main.c:                                     ^
+main.c(316): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCNPolarity_High;     //互补端的极性 
+main.c:                  ^
+main.c(316): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCNPolarity_High;     //互补端的极性 
+main.c:                                     ^
+main.c(317): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OutputNState=TIM_OutputNState_Enable;//使能互补端输出 
+main.c:                  ^
+main.c(317): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OutputNState=TIM_OutputNState_Enable;//使能互补端输出 
+main.c:                                     ^
+main.c(318): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OCIdleState = TIM_OCIdleState_Reset;  //空闲状态下的非工作状态 不管
+main.c:                  ^
+main.c(318): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OCIdleState = TIM_OCIdleState_Reset;  //空闲状态下的非工作状态 不管
+main.c:                                     ^
+main.c(319): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OCInitStructure.TIM_OCNIdleState = TIM_OCIdleState_Reset;  //先不管
+main.c:                  ^
+main.c(319): error:  #65: expected a ";"
+main.c:                  TIM_OCInitStructure.TIM_OCNIdleState = TIM_OCIdleState_Reset;  //先不管
+main.c:                                     ^
+main.c(321): error:  #79: expected a type specifier
+main.c:                  TIM_OC2Init(TIM1,&TIM_OCInitStructure);       //数初始化外设TIMx通道1这里2.0库为TIM_OCInit
+main.c:                              ^
+main.c(321): error:  #79: expected a type specifier
+main.c:                  TIM_OC2Init(TIM1,&TIM_OCInitStructure);       //数初始化外设TIMx通道1这里2.0库为TIM_OCInit
+main.c:                                   ^
+main.c(321): warning:  #77-D: this declaration has no storage class or type specifier
+main.c:                  TIM_OC2Init(TIM1,&TIM_OCInitStructure);       //数初始化外设TIMx通道1这里2.0库为TIM_OCInit
+main.c:                  ^
+main.c(321): error:  #147: declaration is incompatible with "void TIM_OC2Init(TIM_TypeDef *, TIM_OCInitTypeDef *)" (declared at line 1057 of "..\FWLIB\inc\stm32f10x_tim.h")
+main.c:                  TIM_OC2Init(TIM1,&TIM_OCInitStructure);       //数初始化外设TIMx通道1这里2.0库为TIM_OCInit
+main.c:                  ^
+main.c(322): error:  #79: expected a type specifier
+main.c:          TIM_OC2PreloadConfig(TIM1,TIM_OCPreload_Enable);//使能预装载寄存器
+main.c:                               ^
+main.c(322): error:  #79: expected a type specifier
+main.c:          TIM_OC2PreloadConfig(TIM1,TIM_OCPreload_Enable);//使能预装载寄存器
+main.c:                                    ^
+main.c(322): warning:  #77-D: this declaration has no storage class or type specifier
+main.c:          TIM_OC2PreloadConfig(TIM1,TIM_OCPreload_Enable);//使能预装载寄存器
+main.c:          ^
+main.c(322): error:  #147: declaration is incompatible with "void TIM_OC2PreloadConfig(TIM_TypeDef *, uint16_t)" (declared at line 1097 of "..\FWLIB\inc\stm32f10x_tim.h")
+main.c:          TIM_OC2PreloadConfig(TIM1,TIM_OCPreload_Enable);//使能预装载寄存器
+main.c:          ^
+main.c(325): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                 TIM_BDTRInitStructure.TIM_OSSRState = TIM_OSSRState_Disable;//运行模式下输出选择
+main.c:                 ^
+main.c(325): error:  #65: expected a ";"
+main.c:                 TIM_BDTRInitStructure.TIM_OSSRState = TIM_OSSRState_Disable;//运行模式下输出选择
+main.c:                                      ^
+main.c(326): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                 TIM_BDTRInitStructure.TIM_OSSIState = TIM_OSSIState_Disable;//空闲模式下输出选择 
+main.c:                 ^
+main.c(326): error:  #65: expected a ";"
+main.c:                 TIM_BDTRInitStructure.TIM_OSSIState = TIM_OSSIState_Disable;//空闲模式下输出选择 
+main.c:                                      ^
+main.c(327): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                 TIM_BDTRInitStructure.TIM_LOCKLevel = TIM_LOCKLevel_OFF;    //锁定设置
+main.c:                 ^
+main.c(327): error:  #65: expected a ";"
+main.c:                 TIM_BDTRInitStructure.TIM_LOCKLevel = TIM_LOCKLevel_OFF;    //锁定设置
+main.c:                                      ^
+main.c(328): error:  #77-D: this declaration has no storage class or type specifier
+main.c:                 TIM_BDTRInitStructure.TIM_DeadTime = 50;                  //死区时间设置
+main.c:                 ^
+main.c: main.c: 3 warnings, 30 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14862 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.53 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14866 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.53 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14870 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.53 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14858 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.53 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14858 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.53 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14838 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.64 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14974 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.61 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14938 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.45 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14882 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.55 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14894 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14894 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.67 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+main.c(163): warning:  #174-D: expression has no effect
+main.c:                           LCD_DisplayStringLine(Line4,(unsigned char*)" Status: OFF         "); 4
+main.c:                                                                                                 ^
+main.c(164): error:  #65: expected a ";"
+main.c:                           status=0;
+main.c:                           ^
+main.c: main.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14962 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.47 KByte/s
+Programming Done.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14962 RO-data=5022 RW-data=88 ZI-data=1672  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14962 RO-data=5022 RW-data=76 ZI-data=1676  
+"..\OUTPUT\GO.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OUTPUT\\GO.AXF" 
+Erasing Done.
+Program Speed: 12.58 KByte/s
+Programming Done.
