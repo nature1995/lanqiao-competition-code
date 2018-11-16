@@ -6,6 +6,8 @@
 
 # 蓝桥杯历年比赛试题与源码（嵌入式与开发组）
 
+If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
+
 ### 第九届决赛模拟题
 ### 第九届省赛模拟题
 ### 第八届决赛-频率控制器的功能设计与实现
